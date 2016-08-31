@@ -22,21 +22,21 @@ export class SideBarComponent {
   public onSearchClick() {   
       this.resetActiveButtons();
       this.activeSearch = true;      
-      let link = ['search-page'];
+      let link = ['user/search-page'];
       this.router.navigate(link);  
   }
 
   public onArchiveClick(){
       this.resetActiveButtons();
       this.activeArchive = true;
-      let link = ['archive-page'];
+      let link = ['user/archive-page'];
       this.router.navigate(link);  
   }
 
   public onGenerateReport(){
       this.resetActiveButtons();
       this.activeGenerate = true;
-      let link = ['home-page'];
+      let link = ['user/home-page'];
       this.router.navigate(link);  
   }
 

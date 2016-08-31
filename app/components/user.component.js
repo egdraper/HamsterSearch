@@ -9,22 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var topbar_component_1 = require("./shared/components/topbar.component");
-var admin_component_1 = require("./components/admin.component");
-var user_component_1 = require("./components/user.component");
-var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
+var sidebar_component_1 = require("../shared/components/sidebar.component");
+var main_component_1 = require("../shared/components/main.component");
+var UserComponent = (function () {
+    function UserComponent() {
     }
-    AppComponent = __decorate([
+    UserComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n           <top-bar></top-bar>\n           <router-outlet></router-outlet>  \n            ",
-            directives: [topbar_component_1.TopBarComponent, admin_component_1.AdminComponent, user_component_1.UserComponent, router_1.ROUTER_DIRECTIVES]
+            selector: 'user',
+            templateUrl: "app/templates/user.component.html",
+            styleUrls: ["app/styles/user.component.css"],
+            directives: [sidebar_component_1.SideBarComponent, main_component_1.MainComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], UserComponent);
+    return UserComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.UserComponent = UserComponent;
+//# sourceMappingURL=user.component.js.map

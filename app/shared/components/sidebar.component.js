@@ -22,19 +22,19 @@ var SideBarComponent = (function () {
     SideBarComponent.prototype.onSearchClick = function () {
         this.resetActiveButtons();
         this.activeSearch = true;
-        var link = ['search-page'];
+        var link = ['user/search-page'];
         this.router.navigate(link);
     };
     SideBarComponent.prototype.onArchiveClick = function () {
         this.resetActiveButtons();
         this.activeArchive = true;
-        var link = ['archive-page'];
+        var link = ['user/archive-page'];
         this.router.navigate(link);
     };
     SideBarComponent.prototype.onGenerateReport = function () {
         this.resetActiveButtons();
         this.activeGenerate = true;
-        var link = ['home-page'];
+        var link = ['user/home-page'];
         this.router.navigate(link);
     };
     SideBarComponent.prototype.resetActiveButtons = function () {
